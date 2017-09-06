@@ -11,4 +11,14 @@ class Index
     public function index(){
         return 'hello world';
     }
+
+    // 测试路由参数是不是可以走到这
+    public function test(){
+        return 'test';
+    }
+    // public/index.php/index/index/test1
+    public function test1(){
+        return 'test1';
+    }
+
 }
