@@ -30,6 +30,7 @@ use think\Session;
 use think\Url;
 use think\View;
 
+
 if (!function_exists('load_trait')) {
     /**
      * 快速导入Traits PHP5.5以上无需调用
@@ -584,6 +585,21 @@ if (!function_exists('collection')) {
             return \think\model\Collection::make($resultSet);
         } else {
             return \think\Collection::make($resultSet);
+        }
+    }
+}
+
+if (!function_exists('M')) {
+    /**
+     * 兼容以前3.2的单字母单数 M
+     * @param string $name 表名
+     * @return DB对象
+     */
+    function M($name = '')
+    {
+        if(!empty($name))
+        {
+            return Db::name($name);
         }
     }
 }
