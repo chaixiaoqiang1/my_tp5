@@ -1,7 +1,10 @@
 <?php
 namespace app\index\controller;
 
-class Index
+//use think\console\command\make\Controller;
+use think\Controller;
+
+class Index extends Controller
 {
     public function index1()
     {
@@ -9,7 +12,8 @@ class Index
     }
 
     public function index(){
-        return 'hello world';
+        return $this->fetch();
+//        return 'hello world';
     }
 
     // 测试路由参数是不是可以走到这

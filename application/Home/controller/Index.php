@@ -5,7 +5,7 @@ use think\Db;
 use think\View;
 use think\Model;
 
-class Index extends Controller
+class Index extends \Think\Controller
 {
 
     public function index(){
