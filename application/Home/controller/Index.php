@@ -19,7 +19,6 @@ class Index extends Controller
         // fetch暂不能使用，待解决
 //        return 'Home->Index->index';
 
-        //修改一下下
     }
 
 }
