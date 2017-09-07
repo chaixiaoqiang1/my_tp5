@@ -9,5 +9,15 @@
 </head>
 <body>
     <h1>数据库以及视图层的展示</h1>
+    <!-- tp5模板循环赋值的方法与TP3是一样的 只的标签外有些区别不过应该可以定义吧 -->
+    {foreach name="data" item="vo"}
+        <h2>{$vo.username}</h2>
+    {/foreach}
+
+    {volist name="data" id="vo"}
+        <h3>{$vo.username}</h3>
+    {/volist}
+
+
 </body>
 </html>
