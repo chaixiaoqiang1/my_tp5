@@ -16,8 +16,13 @@ class Index extends Controller
         $this->assign('data',$return);
         return $this->fetch();
         // fetch方法使用已解决   解决方法：加载Controller类不对 应为think\Controller
-//        return 'Home->Index->index';
+        //        $this->view->replace(['__PUBLIC__' => './Public',]);  //模板中内容替换 3.2的__PUBLIC__不可用  也可以在配置文件中修改
+    }
 
+    // 测试URL请求方式  5中U函数不可用,替代函数url  函数在控制器中和模板中的使用一样　模板中加‘：’
+    public function  welcome(){
+        $a = url('hello/world');
+        return 'hello world';
     }
 
 }

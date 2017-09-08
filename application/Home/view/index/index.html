@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>home下fetch使用以及数据库的使用</title>
+    <!-- __PUBLIC__默认没有设置 可以在配置文件进行模板替换配置 -->
+    <link rel="stylesheet" href="__PUBLIC__/css/index.css">
 </head>
 <body>
     <h1>数据库以及视图层的展示</h1>
@@ -18,6 +20,8 @@
         <h3>{$vo.username}</h3>
     {/volist}
 
-
+    <div class="d1">
+    </div>
+    <iframe src="{:url('Index/welcome')}" frameborder="0"></iframe>
 </body>
 </html>
