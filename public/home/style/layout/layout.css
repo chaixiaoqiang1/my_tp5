@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/*	项目名称：梧桐
+ *	文件名称：梧桐系统框架页面css文件
+ *	开发时间：2017/04/19
+ * 	开发人员：344822559@qq.com
+ * 	页面样式标识符：_zm
+ * */
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#header_zm{
+    height: 60px;
+    padding-left: 210px;
+    padding-right: 200px;
+    background: url(http://103.36.134.38:8080/Public/home/img/layout/header_bj.jpg) repeat-x top;
+    position: relative;
+    -webkit-app-region: drag;
+}
+#header_zm a{
+    display:block;
+    width: 210px;
+    height:60px;
+    position: absolute;
+    left:0px;
+    top:0px;
+}
+
+
+#header_zm .tab_box_zm{
+    min-width: 500px;
+    padding-top: 20px;
+    height: 40px;
+    position: relative;
+}
+#header_zm .tab_box_zm ul{
+    display: block;
+}
+#header_zm .tab_box_zm ul li{
+    height: 40px;
+    padding: 0 13px;
+    line-height: 40px;
+    font-size: 14px;
+    background: #d35c24;
+    color: #fbc1a5;
+    border-left: 1px solid #a9491b;
+    float: left;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+#header_zm .tab_box_zm ul li span{
+    float: left;
+}
+
+#header_zm .tab_box_zm ul li i{
+    float: left;
+    width: 20px;
+    height: 40px;
+    background: url(../../img/layout/tab_close.png) no-repeat center;
+}
+
+#header_zm .tab_box_zm ul li i:hover{
+    background: url(../../img/layout/tab_close_hover.png) no-repeat center;
+}
+#header_zm .tab_box_zm ul li.active{
+    background: #ffe0d2;
+    color: #666;
+}
+
+#header_zm .tab_box_zm ul li.active i{
+    background: url(../../img/layout/tab_close_active_hover.png) no-repeat center;
+}
+
+#header_zm .tab_box_zm ul li.active i:hover{
+    background: url(../../img/layout/tab_close_active_hover.png) no-repeat center;
+}
+
+#header_zm .tab_box_zm ul li:first-child{
+    border-left: none;
+}
+
+
+#header_zm .guild_zm{
+    position: absolute;
+    width: 175px;
+    padding-left: 25px;
+    height: 20px;
+    right: 0px;
+    top: 20px;
+    background: url(../../img/layout/icon_member.png) no-repeat left center;
+    -webkit-app-region: no-drag;
+}
+#header_zm .guild_zm .memberName_zm{
+    line-height: 20px;
+    height: 20px;
+    color: #fee8dd;
+    cursor: pointer;
+    max-width: 56px;
+    overflow: hidden;
+    padding-right: 12px;
+    display: block;
+    background: url(../../img/layout/icon_member_down.png) no-repeat right center;
+    float: left;
+}
+
+#header_zm .guild_zm .member_down{
+    width: 210px;
+    background: white;
+    box-shadow: 0px 2px 3px #e7e7e7;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    z-index: 1000;
+    display: none;
+}
+
+#header_zm .guild_zm .member_down .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    top: -8px;
+}
+#header_zm .guild_zm .member_down ul{
+    display: block;
+    clear: both;
+}
+#header_zm .guild_zm .member_down ul li{
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+#header_zm .guild_zm .member_down ul li:last-child{
+    border-bottom: none;
+}
+#header_zm .guild_zm .member_down ul li div.net_code{
+    background: url(../../img/icon/icon_code.png) no-repeat left 2px;
+    padding-left: 28px;
+}
+#header_zm .guild_zm .member_down ul li div.net_code p{
+    margin: 0px;
+    line-height: 18px;
+}
+
+.line_layer_top_line_zm{
+    color: #f69860;
+    margin-right: 0px;
+    margin-left: 6px;
+}
+
+#header_zm .guild_zm .set_box-zm{
+    width: 88px;
+    height: 20px;
+    float: left;
+}
+#header_zm .guild_zm .set_box-zm ul{
+    display: block;
+}
+#header_zm .guild_zm .set_box-zm ul li{
+    float: left;
+    padding-left: 12px;
+    cursor: pointer;
+    position: relative;
+}
+#header_zm .guild_zm .set_box-zm ul li img{
+    vertical-align: top;
+    padding-top: 4px;
+}
+
+#header_zm .guild_zm .set_box-zm ul li .auto_nub{
+    line-height: 16px;
+    color:#ed6900;
+    min-width: 9px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 0 4px;
+    border-radius: 8px;
+    font-size: 10px;
+    text-align: center
+}
+
+
+.main_zm{
+    width: 100%;
+    background: white;
+    display: none;
+}
+.main_zm_block{
+    display: block;
+}
+
+.main_zm iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
