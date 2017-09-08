@@ -8,13 +8,82 @@
     <title>{block name="title"}申通快递.梧桐{/block}</title>
     <link rel="stylesheet" href="__PUBLIC__/lib/sto/css/sto.css" />
     <link rel="stylesheet" href="__PUBLIC__/style/page/inner-index.css" />
+    <style>
+        #header_zm {
+            height: 60px;
+            padding-left: 210px;
+            padding-right: 200px;
+            background: url(http://103.36.134.38:8080/Public/home/img/layout/header_bj.jpg) repeat-x top;
+            position: relative;
+            -webkit-app-region: drag;
+        }
+        #header_zm a {
+            display: block;
+            width: 210px;
+            height: 60px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        a {
+            text-decoration: none !important;
+            color: #333;
+        }
+
+        img {
+            display: inline-block;
+            border: none;
+        }
+
+        #header_zm .tab_box_zm {
+            min-width: 500px;
+            padding-top: 20px;
+            height: 40px;
+            position: relative;
+        }
+        #header_zm .tab_box_zm ul {
+            display: block;
+        }
+
+        #header_zm .tab_box_zm ul li:first-child {
+            border-left: none;
+        }
+        #header_zm .tab_box_zm ul li.active {
+            background: #ffe0d2;
+            color: #666;
+        }
+        #header_zm .tab_box_zm ul li {
+            height: 40px;
+            padding: 0 13px;
+            line-height: 40px;
+            font-size: 14px;
+            background: #d35c24;
+            color: #fbc1a5;
+            border-left: 1px solid #a9491b;
+            float: left;
+            cursor: pointer;
+            -webkit-app-region: no-drag;
+        }
+        li {
+            list-style: none;
+        }
+
+
+
+    </style>
 </head>
 <body>
-<!--
-    作者：398146685@qq.com
-    时间：2017-04-24
-    描述：系统内框架，以运输管理为例
--->
+<!-- 顶部导航 -->
+<div id="header_zm">
+    <a href="javascript:;"><img title="梧桐教学中心" src="http://103.36.134.38:8080/Public/home/img/layout/logo.jpg" /></a>
+    <div class="tab_box_zm">
+        <ul>
+            <!--<li class="active" data-src="{:url('Index/index')}" tag="Index">首页</li>-->
+        </ul>
+    </div>
+</div>
+<!-- 顶部导航结束 -->
+
 <!--右侧内容区域-->
 <div class="main_right_b f-r">
     <div class="main_content_b">
