@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*	项目名称：梧桐
+ *	文件名称：车辆登记欢迎页面css文件
+ *	开发时间：2017/04/14
+ * 	开发人员：398146685@qq.com
+ * 	页面样式标识符：_b
+ * */
+
+
+.system_code ul li{
+	float: left;
+}
+
+.system_code ul li:first-child{
+	margin-right: 20px;
+}
+
+.ibox_important_info span{
+	font-size: 12px;
+	color: #999999;
+}
+
+.ibox_important_info h3{
+	padding: 0;
+	display: inline-block;
+	margin: 0 6px;
+}
+

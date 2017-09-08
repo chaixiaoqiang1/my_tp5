@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+//颜色变量
+@color-normal:#ed8128;
+@color-normal-hover:#d47324;
+@color-white: #ffffff;
+@color-box-border: #eeeeee;
+@color-btn-border: #c9c9c9;
+@font-color:#999999;
+@font-title-color:#666666;
+
+//边框
+@box-border-style:1px solid @color-box-border;
+@btn-border-style:1px solid @color-btn-border;
+

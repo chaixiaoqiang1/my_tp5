@@ -19,7 +19,7 @@ return [
     // 应用调试模式
     'app_debug'              => true,
     // 应用Trace
-    'app_trace'              => true,
+    'app_trace'              => false,
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
@@ -239,7 +239,7 @@ return [
 
     // 输出替换  视图输出字符串内容替换
     'view_replace_str'  =>  [
-        '__PUBLIC__'=>'../../../public',  // 引用文件路径
+        '__PUBLIC__'=> PUBLIC_PATH,  // 引用文件路径
         '__ROOT__' => '/',
     ]
 ];

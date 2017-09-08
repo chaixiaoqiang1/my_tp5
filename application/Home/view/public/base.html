@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>{block name="title"}申通快递.梧桐{/block}</title>
+    <link rel="stylesheet" href="__PUBLIC__/lib/sto/css/sto.css" />
+    <link rel="stylesheet" href="__PUBLIC__/style/page/inner-index.css" />
+</head>
+<body>
+<!--
+    作者：398146685@qq.com
+    时间：2017-04-24
+    描述：系统内框架，以运输管理为例
+-->
+<!--右侧内容区域-->
+<div class="main_right_b f-r">
+    <div class="main_content_b">
+        <div id="mask"></div>
+        <div class="content_tabs_b">
+            <div class="toolbar_b">
+                <div class="toolbar_down">常用工具<i class="iconfont icon-down"></i>
+                </div>
+                <ul class="toolbar_list">
+                    <li><a href="javascript:void(0)"><i class="iconfont icon-search"></i>快件查询</a></li>
+                    <li><a href="javascript:void(0)"><i class="iconfont icon-search"></i>订单查询</a></li>
+                    <li><a href="javascript:void(0)"><i class="iconfont icon-search"></i>网点查询</a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:void(0)"><i class="iconfont icon-help"></i>帮助中心</a></li>
+                </ul>
+            </div>
+            <div class="roll_left">
+                <i class="iconfont icon-return"></i>
+            </div>
+            <div class="page_tabs_b">
+                <div class="page_tabs_content">
+                    <a href="javascript:void(0)" tag="home" class="active">首页</a>
+                </div>
+            </div>
+            <div class="roll_right">
+                <i class="iconfont icon-forward"></i>
+            </div>
+            <div class="close_group">
+                <div class="toolbar_down">关闭操作<i class="iconfont icon-down"></i>
+                </div>
+                <ul class="toolbar_list">
+                    <li><a href="javascript:void(0)" class="tab_active">定位当前选项卡</a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:void(0)" class="tab_closeAll">关闭所有选项卡</a></li>
+                    <li><a href="javascript:void(0)" class="tab_closeOther">关闭其他选项卡</a></li>
+                </ul>
+            </div>
+            <div class="refresh_iframe">
+                <i class="iconfont icon-refresh"></i>
+            </div>
+        </div>
+        <div class="page_content show animated fadeInRight" tag="home">
+            <iframe scrolling="yes" frameborder="0" src="{:url('Index/welcomeExpress')}"></iframe>
+        </div>
+    </div>
+</div>
+<!--右侧内容结束-->
+<!--左侧导航-->
+{block name="left_menu"}
+    {include file="public/left_menu" /}
+{/block}
+<!--左侧导航结束-->
+<div id="nav_box" style="display: block">
+    <div class="second_nav_box f-l">
+        <div id="second_nav">
+        </div>
+    </div>
+    <div class="third_nav_box f-l">
+        <div id="third_nav">
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/layerui/layui.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/sto/sto.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/page/transport-newnav.js"></script>
+</body>
+</html>

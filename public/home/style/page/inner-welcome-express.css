@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/*	项目名称：梧桐
+ *	文件名称：快递业务首页css文件
+ *	开发时间：2017/07/14
+ * 	开发人员：398146685@qq.com
+ * */
+
+.header{
+	background: #ffffff;
+	height: auto;
+	padding: 20px 20px 0;
+	border-bottom: 1px solid #eeeeee;
+	text-align: left;
+}
+.header-cont img.vms-logo{
+	display: block;
+	float: left;
+}
+
+.loops{
+	margin: 0 auto;
+	width: 960px;
+}
+
+.loops dl{
+	margin: 0 -10px;
+	overflow: hidden;
+}
+.loops dl dd{
+	width: 114px;
+	height: 140px;
+	float: left;
+	display: inline;
+	line-height: 18px;
+	border-radius: 8px;
+	margin: 4px;
+}
+.loops dl dd:hover{
+	background: rgba(220,220,220,0.2);
+}
+.loops dl dd:hover span{
+	color: #f58664;
+}
+.loops dd img {
+	display: block;
+	border:none;
+	margin: 20px;
+}
+.loops dd span {
+	line-height: 16px;
+	height: 35px;
+	overflow: hidden;
+	display: block;
+	text-align: center;
+	color: #666666;
+}
+
+.header .tab-bar{
+	margin-top: 20px;
+}
+.header .tab-bar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.header .tab-bar ul li{
+	float: left;
+	padding: 10px 0;
+	margin-right: 40px;
+	color: #999999;
+	cursor: pointer;
+	line-height: 24px;
+}
+.header .tab-bar ul li .badge-warning{
+	margin-left: 4px;
+}
+.header .tab-bar ul li.active{
+	border-bottom: 3px solid #ed6900;
+	color: #666666;
+}
+.header .tab-bar ul li:hover{
+	color: #666666;
+}
+.header-code ul li{
+	float: left;
+	margin-left: 20px;
+}
+.header-code ul li img,.header-code ul li span{
+	display: block;
+	text-align: center;
+}
+.badge {
+	display: inline-block;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	background-color: #777;
+	border-radius: 10px;
+}
+.badge-warning {
+	background-color: #f8ac59;
+	color: #FFF;
+}
+
+.wel-content{
+	padding: 20px 0 0;
+	width: 100%;
+	display: none;
+}
+.layui-table.charts-table td, .layui-table.charts-table th {
+	 padding: 9px 15px;
+	 min-height: 24px;
+	 line-height: 24px;
+	font-size: 13px;
+}
+
+.layui-table.charts-table thead tr {
+	background-color: #999999;
+	color: #ffffff;
+}
+
+.container_express {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
