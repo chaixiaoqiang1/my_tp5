@@ -17,5 +17,6 @@ return [
         ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
         ':name' => ['index/hello', ['method' => 'post']],
     ],
-
+    '/'  => 'Home/index/index', // 首页访问路由
+    'my' =>  'Index/index/index', // 静态地址路由
 ];
