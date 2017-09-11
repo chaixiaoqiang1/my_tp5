@@ -1,6 +1,7 @@
 <?php
 namespace app\Home\controller;
 use think\Db;
+use think\Request;
 use think\View;
 use think\Controller;
 
@@ -24,13 +25,16 @@ class Index extends Controller
     }
 
     // 测试URL请求方式  5中U函数不可用,替代函数url  函数在控制器中和模板中的使用一样　模板中加‘：’
-    public function  welcome(){
-        if(input('post.')){
+    public function  welcome(Request $request){
+        if($request->isPost()){
+            var_dump("判断参数的传递方式");
+        }
+       /* if(input('post.')){
             echo 'post';  //  input('post.') 相当于tp3是否IS_POST
         }
         if(input('get.')){
             echo 'get';
-        }
+        }*/
 
 
 
