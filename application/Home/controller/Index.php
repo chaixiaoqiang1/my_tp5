@@ -25,6 +25,15 @@ class Index extends Controller
 
     // 测试URL请求方式  5中U函数不可用,替代函数url  函数在控制器中和模板中的使用一样　模板中加‘：’
     public function  welcome(){
+        if(input('post.')){
+            echo 'post';  //  input('post.') 相当于tp3是否IS_POST
+        }
+        if(input('get.')){
+            echo 'get';
+        }
+
+
+
         $a = url('hello/world');
         return 'hello world';
     }
