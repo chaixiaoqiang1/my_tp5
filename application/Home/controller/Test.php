@@ -56,4 +56,5 @@ class Test extends Controller
 
         }
     }
+    //验证码按手册上composer直接死丢丢了...
 }
