@@ -8,58 +8,13 @@
     <title>{block name="title"}申通快递.梧桐{/block}</title>
     <link rel="stylesheet" href="__PUBLIC__/lib/sto/css/sto.css" />
     <link rel="stylesheet" href="__PUBLIC__/style/page/inner-index.css" />
-    <link rel="stylesheet" href="__PUBLIC__/style/layout/layout.css">
 </head>
 <body>
-<!-- 顶部导航 -->
-<div id="header_zm">
-    <a href="javascript:;"><img title="梧桐教学中心" src="http://103.36.134.38:8080/Public/home/img/layout/logo.jpg" /></a>
-    <div class="tab_box_zm">
-        <ul>
-            <!--<li class="active" data-src="{:url('Index/index')}" tag="Index">首页</li>-->
-        </ul>
-    </div>
-    <div class="guild_zm">
-        <div class="memberName_zm f-14">张名小啊啊</div>
-        <div class="member_down">
-            <div class="triangle-up"></div>
-            <ul>
-                <li class="f-14">我的资料</li>
-                <li>
-                    <div class="net_code">
-                        <p>网点编号:2155</p>
-                        <p>网点名称:上海申通</p>
-                        <p>员工编号:2155500479</p>
-                        <p>用户名:zjy</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <button type="button" id="resetPsw" class="layui-btn layui-btn-sto width_100_p mb-10">重置密码</button>
-                    </div>
-                    <div>
-                        <button type="button" class="layui-btn layui-btn-default width_90">更换账号</button>
-                        <button type="button" class="layui-btn layui-btn-default width_90" style="margin-left: 5px!important;" id="quite_back">安全退出</button>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="pipe line_layer_top_line_zm f-l">|</div>
-        <div class="set_box-zm">
-            <ul>
-                <li>
-                    <img src="__PUBLIC__/img/layout/icon_layout_message.png">
-                    <span class="bg_white auto_nub" id="auto" style="display: block; opacity: 0.728394;">9</span>
-                </li>
-                <li><img src="__PUBLIC__/img/layout/icon_layout_small.png" onclick="minimizedParentForm();"></li>
-                <li><img src="__PUBLIC__/img/layout/icon_layout_max.png" onclick="maximizedParentForm();"></li>
-                <li><img src="__PUBLIC__/img/layout/icon_layout_close.png" onclick="closeParentForm();"></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- 顶部导航结束 -->
-
+<!--
+    作者：398146685@qq.com
+    时间：2017-04-24
+    描述：系统内框架，以运输管理为例
+-->
 <!--右侧内容区域-->
 <div class="main_right_b f-r">
     <div class="main_content_b">
@@ -126,12 +81,5 @@
 <script type="text/javascript" src="__PUBLIC__/lib/layerui/layui.js"></script>
 <script type="text/javascript" src="__PUBLIC__/lib/sto/sto.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/page/transport-newnav.js"></script>
-
-<script>
-    $('.guild_zm .memberName_zm').on('click', function (event) {
-        $('.guild_zm').find('.member_down').toggle();
-        event.stopPropagation();
-    })
-</script>
 </body>
 </html>
