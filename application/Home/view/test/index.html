@@ -1,0 +1,40 @@
+index
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+</head>
+<body>
+<a href="{:url('Test/add')}"><button>添加</button></a>
+<table border="1" style="border-collapse: collapse">
+    <thead>
+        <tr>
+            <td>序号</td>
+            <td>姓名</td>
+            <td>手机号</td>
+            <td>状态</td>
+            <td>添加时间</td>
+            <td>操作</td>
+        </tr>
+    </thead>
+    <tbody>
+        {volist name="data" id="vo"}
+        <tr>
+            <td>{$vo.id}</td>
+            <td>{$vo.username}</td>
+            <td>{$vo.phone_num}</td>
+            <td>{$vo.status}</td>
+            <td>{:date('Y-m-d H:i:s',$vo.addtime)}</td>
+            <td><a href="{:url('Test/updata',array('id'=>$vo['id']))}">修改</a>　<span style="margin-left: 10px;"></span><a href="{:url('Test/delete',array('id'=>$vo['id']))}">删除</a></td>
+        </tr>
+        {/volist}
+    </tbody>
+
+</table>
+</body>
+</html>
