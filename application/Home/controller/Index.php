@@ -112,7 +112,7 @@ class Index extends Controller
     }
     
     //批量导入
-    public function orderImport(Request $request)
+    public function orderImport6767(Request $request)
     {
         if ($request->isPost()) {
             if ($request->post('name') == 1) {
